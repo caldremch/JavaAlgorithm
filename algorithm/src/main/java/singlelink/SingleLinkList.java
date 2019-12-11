@@ -1,4 +1,4 @@
-package com.caldremch.algorithm.singlelink;
+package singlelink;
 
 /**
  * Created by Caldremch on 2019/11/8.
