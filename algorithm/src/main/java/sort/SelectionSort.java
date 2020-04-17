@@ -58,6 +58,6 @@ public class SelectionSort {
 
     public static void main(String[] args) {
         int[] arr={1,3,2,45,65,33,12};
-        SelectionSort.start(arr);
+        InsertSort.start(arr);
     }
 }
