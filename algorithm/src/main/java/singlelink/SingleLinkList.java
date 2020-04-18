@@ -6,24 +6,27 @@ package singlelink;
  */
 public class SingleLinkList {
 
-	private Node head;
+	private ListNode head;
+
+	public ListNode getHead() {
+		return head;
+	}
 
 	public SingleLinkList() {
 		this.head = null;
 	}
 
+	//插入链表
 	public void insert(int data) {
-		Node b = new Node();
+		ListNode b = new ListNode();
 		b.data = data;
-//		b.next = head;
-//
-//		head = b;
+
 		if (head == null){
 			head = b;
 			return;
 		}
 
-		Node temp = head;
+		ListNode temp = head;
 
 		while (temp.next != null) {
 			temp = temp.next;
@@ -32,23 +35,19 @@ public class SingleLinkList {
 		temp.next = b;
 	}
 
+	//显示链表
 	public void show(){
-		Node node = head;
-		while (node != null){
-			System.out.print(node.data+" ");
-			node = node.next;
+		ListNode listNode = head;
+		while (listNode != null){
+			System.out.print(listNode.data+" ");
+			listNode = listNode.next;
 		}
-	}
-
-	public void delete(int i) {
+		System.out.println("");
 
 	}
 
-	public Node get(int i) {
-		return null;
-	}
-
-	public void add(Node node) {
+	//
+	public  void reverse(){
 
 	}
 
@@ -57,7 +56,6 @@ public class SingleLinkList {
 		singleLinkList.insert(1);
 		singleLinkList.insert(2);
 		singleLinkList.insert(3);
-		singleLinkList.show();
 		singleLinkList.show();
 	}
 	
