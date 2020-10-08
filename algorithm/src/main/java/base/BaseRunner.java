@@ -6,8 +6,7 @@ public abstract class BaseRunner {
         long start = System.currentTimeMillis();
         onRun();
         long end = System.currentTimeMillis();
-        System.out.println(end-start);
+        System.out.println("time-Millis:"+(end-start));
     }
-
     protected abstract void onRun();
 }
